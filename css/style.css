@@ -1,0 +1,129 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/top.png) center no-repeat;
+}
+
+.hero .down-btn {
+  position: absolute;
+  bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.hero .down-btn:hover {
+  opacity: 100%;
+}
+
+.product {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 150px;
+  display: block;
+}
+
+.product p {
+  text-align: center;
+  color: #7C7C7C;
+  font-size: 20px;
+}
+
+.product-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-body img {
+  width: 300px;
+}
+
+.product-body_descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.product-body_descr h1 {
+  width: 100%;
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.product-body_descr h2 {
+  color: #E64206;
+  margin-bottom: 5px;
+}
+
+.product-body_descr span {
+  color: #7C7C7C;
+  font-size: 14px;
+}
+
+.middle {
+  width: 100%;
+  height: auto;
+  background: url(../img/middle.png) center no-repeat;
+  padding: 40px 150px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.middle-block {
+  width: 45%;
+}
+
+.middle-block h1 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.middle-block ul {
+  list-style-type: circle;
+  padding-left: 10px;
+}
+
+.middle-block ul li {
+  margin-bottom: 25px;
+}
+
+.middle-block_second h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.middle-block_second ul {
+  list-style: none;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

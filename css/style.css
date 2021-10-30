@@ -182,16 +182,7 @@ html {
   margin-left: 10px;
 }
 
-.map-block .map {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.map-block .map .place-card, .map-block .map .place-card-large {
-  display: none !important;
-}
-
-.map-block .map .gm-style, .map-block .map .place-card-large {
-  display: none !important;
+#map {
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */

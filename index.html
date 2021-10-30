@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <table id="employees"></table>
     <div class="hero">
-        <img src="./img/arrow.png" alt="down-arrow" class="down-btn">
+        <a href="#product"><img src="./img/arrow.png" alt="down-arrow" class="down-btn"></a>
     </div>
 
-    <div class="product">
+    <div class="product" id="product">
         <p>Viimati lõppenud</p>
         <div class="product-body">
-            <img src="./img/saw.png" alt="saw">
+            <img id="img" src="./img/saw.png" alt="saw">
             <div class="product-body_descr">
-                <h1>Motorsaag Husqvarna</h1>
+                <h1 id="title">Motorsaag Husqvarna</h1>
                 <div class="block">
-                    <h2>986€</h2>
+                    <h2 id="price">986€</h2>
                     <span>hetke hind</span>
                 </div>
                 <div class="block">
-                    <h2>laanekene</h2>
-                    <span>juhtiv pakkuja</span>
+                    <h2 id="time">laanekene</h2>
+                    <span>Oksjoni lõpuni</span>
                 </div>
                 <div class="block">
-                    <h2>450</h2>
+                    <h2 id="bids">450</h2>
                     <span>pakkumist</span>
                 </div>
             </div>
@@ -55,8 +56,45 @@
         </div>
     </div>
 
+    <div class="pattern">
+        <h1>want higher?</h1>
+        <p>Before these experiments most physicists believed in an objective, independent universe. They still clung to the assumption that physical states exist in some absolute sense before they are measured.</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <div class="pattern-block">
+            <h1>contact us</h1>
+            <p>Before these experiments most</p>
+            <span>
+                <img src="./img/phone.png" alt="phone"> <a href="mailto:info@allepal.ee">info@allepal.ee</a>
+            </span>
+            <span>
+                <img src="./img/envelope.png" alt="envelope"> <a href="tel:+37265656565">+372 65656565</a>
+            </span>
+        </div>
+        <div class="pattern-block">
+            <h1>location</h1>
+            <ul>
+                <li>AllePal OÜ</li>
+                <li>Maakri 23a</li>
+                <li>10145 Tallinn,Eesti</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="map-block">
+        <iframe class="map" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.0426628297719!2d24.758314915594227!3d59.43236300979971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294a0841313f9%3A0x355dccd90b569857!2sMaakri%2023a%2C%2010145%20Tallinn!5e0!3m2!1set!2see!4v1635633337800!5m2!1set!2see" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+        function initMap() {
+        new google.maps.Map(document.getElementById("map"), {
+            mapId: "8e0a97af9386fef",
+            center: { lat: 48.85, lng: 2.35 },
+            zoom: 12,
+        });
+        }
+
+    </script>
 </body>
 </html>

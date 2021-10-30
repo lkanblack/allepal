@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -40,9 +44,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -125,5 +129,69 @@
 .middle-block_second ul {
   list-style: none;
   padding: 0;
+}
+
+.pattern {
+  background: url(../img/pattern.png) center no-repeat;
+  height: auto;
+  width: 100%;
+  padding: 40px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pattern h1 {
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.pattern p {
+  color: #7C7C7C;
+  font-size: 14px;
+  width: 100%;
+}
+
+.pattern-block {
+  margin-top: 40px;
+  width: 45%;
+}
+
+.pattern-block ul {
+  list-style: none;
+  padding: 0;
+  color: #7C7C7C;
+  font-size: 12px;
+}
+
+.pattern-block span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pattern-block span a {
+  color: #7C7C7C;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.map-block .map {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.map-block .map .place-card, .map-block .map .place-card-large {
+  display: none !important;
+}
+
+.map-block .map .gm-style, .map-block .map .place-card-large {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

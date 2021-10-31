@@ -53,6 +53,7 @@ function initMap() {
     position: { lat: 59.43238210651094, lng: 24.760525055896057 },
     map,
     title: "AllePal!",
+    animation: google.maps.Animation.DROP
     });
 
 }

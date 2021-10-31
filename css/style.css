@@ -143,6 +143,7 @@ html {
 
 .pattern {
   background: url(../img/pattern.png) center no-repeat;
+  background-size: cover;
   height: auto;
   width: 100%;
   padding: 40px 150px;
